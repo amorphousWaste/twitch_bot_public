@@ -1,0 +1,170 @@
+---
+# Replace the values in '<>' with your bot data.
+username: <username the bot is under>
+owner: <bot owner>
+
+# These are the same for all bots
+server: irc.chat.twitch.tv
+port: 6667
+
+# This is the list of 'scopes' or available interfaces you want to authorize
+# the bot for. If you omit this enitrely, a default scope will be provided by
+# Twitch.
+scopes:
+-   <scope1>
+-   <scope2>
+-   <scope3>
+
+# Path to the database file relative to 'twitch_bot.py'.
+databse_path: database/twitch_bot.db
+
+# Timers
+# Time in minutes
+stop_on_silence: 20
+
+# Run these plugins even if plugins would fall under stop_on_silence.
+# Use the plugin (class) name.
+bypass_silence_list:
+-   ExampleCommand
+
+# Plugins
+# This is used to blocklist plugins so they don't load.
+# Use the plugin (class) name.
+blocklist:
+-   ExampleCommand
+
+# This is used to safelist users who can run specific plugins.
+# It's intended for special cases where standard user classifications such as
+# mod, vip, etc. are not appropriate.
+safelist:
+-   dummyuser
+
+# OAuth
+oauth_scopes:
+-   bits:read
+-   channel:manage:broadcast
+-   channel:read:goals
+-   channel:read:hype_train
+-   channel:read:polls
+-   channel:read:predictions
+-   channel:read:redemptions
+-   channel:read:subscriptions
+-   channel:moderate
+-   chat:read
+-   moderation:read
+-   moderator:manage:banned_users
+-   moderator:manage:blocked_terms
+-   moderator:manage:chat_settings
+-   moderator:read:blocked_terms
+-   moderator:read:chat_settings
+-   user:manage:blocked_users
+-   user:read:blocked_users
+-   whispers:read
+
+chat_scopes:
+-   channel:moderate
+-   chat:edit
+-   chat:read
+-   whispers:edit
+-   whispers:read
+
+# ngrok
+ngrok_path: ~/ngrok/ngrok
+ngrok_local_url: http://localhost:4040
+ngrok_tunnel_data: /api/tunnels
+is_static: false
+
+# EventSub
+eventsub_url: https://api.twitch.tv/helix/eventsub/subscriptions
+eventsub_port: 443
+
+eventsub_subscriptions:
+-   channel.update
+-   channel.follow
+-   channel.subscribe
+# -   channel.subscription.end
+-   channel.subscription.gift
+-   channel.subscription.message
+-   channel.cheer
+-   channel.raid
+# -   channel.ban
+# -   channel.unban
+# -   channel.moderator.add
+# -   channel.moderator.remove
+# -   channel.channel_points_custom_reward.add
+# -   channel.channel_points_custom_reward.update
+# -   channel.channel_points_custom_reward.remove
+-   channel.channel_points_custom_reward_redemption.add
+-   channel.channel_points_custom_reward_redemption.update
+# -   channel.poll.begin
+# -   channel.poll.progress
+# -   channel.poll.end
+# -   channel.prediction.begin
+# -   channel.prediction.progress
+# -   channel.prediction.lock
+# -   channel.prediction.end
+# -   drop.entitlement.grant
+# -   extension.bits_transaction.create
+# -   channel.goal.begin
+# -   channel.goal.progress
+-   channel.goal.end
+-   channel.hype_train.begin
+-   channel.hype_train.progress
+-   channel.hype_train.end
+-   stream.online
+-   stream.offline
+# -   user.authorization.grant
+# -   user.authorization.revoke
+# -   user.update
+
+# PubSub
+pubsub_server: wss://pubsub-edge.twitch.tv
+
+pubsub_topics:
+# -   automod-queue.{user_id}.{channel_id}
+# -   channel-bits-events-v2.{channel_id}
+# -   channel-bits-badge-unlocks.{channel_id}
+# -   channel-points-channel-v1.{channel_id}
+# -   channel-subscribe-events-v1.{channel_id}
+# -   chat_moderator_actions.{user_id}.{channel_id}
+# -   user-moderation-notifications.{user_id}.{channel_id}
+-   whispers.{user_id}
+
+# Discord
+discord_username: discord_username
+discord_url: https://discord.com/api/webhooks/FILL_IN_THE_REST
+test_discord_url: https://discord.com/api/webhooks/FILL_IN_THE_REST
+
+# OBS
+obs_host: localhost
+obs_port: 4444
+
+# Audio
+audio_folder: null
+
+# Console
+open_console: true
+console_address: '0.0.0.0'
+console_port: 8081
+
+# Timezone
+# This offset is derived by finding the time zone difference between GMT and
+# your time zone in hours. Eg. PDT -> GMT => 7
+timezone_offset: -7
+# This offset is derived by multiplying the time zone offset by 60.
+# Eg. PDT -> GMT => -7 * 60 = 420
+utc_offset: -420
+
+# Excepthook
+desktop_notification: true
+
+# Emotes
+use_bttv: true
+use_ffz: true
+
+# ZMQ
+zmq_port: 5555
+
+# TCP
+tcp_host: '127.0.0.1'
+tcp_port: 6000

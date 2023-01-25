@@ -1,0 +1,21 @@
+---
+# Points for events
+event_points:
+    # Points earned every interval.
+    view: 25
+    subscriber_view: 125
+
+    # Points earned for an action.
+    subscribe: 5000
+    follow: 500
+    host: 1000
+
+    # Pointes earned per bit cheered.
+    cheer: 5
+
+    # Points earned per dollar tipped.
+    tip: 500
+
+# Redemptions
+redemptions:
+    dab: 1000

@@ -1,0 +1,10 @@
+---
+# Hotkeys definition file.
+# A reference for special keys can be found here:
+#    https://pynput.readthedocs.io/en/latest/keyboard.html#pynput.keyboard.Key
+
+# Hotkey definitions should take the form of:
+# command: hotkey+combo
+# For example:
+mac_screenshot: cmd_l+shift_l+3
+win_screenshot: ctrl_l+print_screen

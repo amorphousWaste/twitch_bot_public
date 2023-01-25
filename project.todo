@@ -1,0 +1,112 @@
+// Built with TODO+ in VSCode
+
+Twitch Bot:
+  // Twitch Bot project
+
+  General:
+    // General bot work
+    ☐ Give Tier 3 subscription to the bot @twitch @high
+    ✔ Welcome first time chatters @done(23-01-03 10:41)
+
+  Configs:
+    // Configs
+
+  Database:
+    // Database and database utils
+    ☐ Check `quotes` table in the database @plugins @high
+
+  API:
+    // Plugins and commands
+    ✔ Revert to per-function validation, 2 different tokens needed @api @critical @done(22-07-14 02:03)
+    ✔ Add `update_stream_settings` to api @1 @api @low @done(22-07-14 02:03)
+    ☐ Add `ban` to api @2 @moderation @api @low
+      ✔ Update `POST` request in `server_utils` @moderation @api @medium @done(22-06-10 17:02)
+      ☐ Works in all other instances, unsure if there is a bug here. @api @medium
+      ☐ 400 Badly formatted request @api @low
+    ☐ Add `update_chat_settings` to api @1 @api @low
+      ☐ 401 Not Authorized error @api @low
+        ☐ Check scopes @config @auth @api @low
+        ☐ Regenerate OAuth token @auth @api @low
+
+  Plugins:
+    // Plugins and commands
+    ☐ Add `!chat_settings` command based on redemptions @1 @plugins @redemption @medium
+    ☐ Search quotes by keyword
+
+  Moderator:
+    // Bot moderation module
+    ☐ Update moderator with new ban api @2 @moderation @api @low
+
+  Overlays:
+    // Generate stream overlays
+    ☐ Investigate creation of an overlay system @overlays @research
+      ☐ Investigate `Bootstrap` https://getbootstrap.com @overlays @research
+      ☐ Investigate `jQuery` https://jquery.com/ @overlays @research
+      ☐ Investigate `Bootstrap-flask` https://github.com/helloflask/bootstrap-flask @overlays @research
+      ☐ Investigate `vue` + `flask` https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs @overlays @research
+      ☐ Investigate `Flask-RESTX` https://flask-restx.readthedocs.io/en/latest/ @overlays @research
+      ☐ Investigate pure `HTML` + `CSS` @overlays @research
+      ✘ Investigate video files + OBS @overlays @research @cancelled(22-06-06 20:50)
+
+    Alerts:
+      // Pop-up event alerts
+      ☐ Get correct background from event @overlays @low
+      ☐ Display background @overlays @low
+      ☐ Add text with event info on top @overlays @low
+        ☐ Transition in with interval @overlays @low
+        ☐ Transition out with interval @overlays @low
+
+    Recent Events:
+      // Persistant list of notable events
+      ☐ Store recent events @overlays @low
+      ☐ Display recent events @overlays @low
+        ☐ User @overlays @low
+        ☐ Event @overlays @low
+        ☐ Relevent info @overlays @low
+
+    Emote Display:
+      // Show recently used emotes in a fun way
+      ☐ Grab used emotes from chat messages @overlays @low
+      ☐ Display the emotes with random movement animation @overlays @low
+
+  Loyalty:
+    // Loyalty points system
+    ☐ Update existing users @loyalty @windows @high
+
+  Service:
+    // Bot as a service model
+    ☐ Disconnect non-eventsub components on sleep @service @low
+    ☐ Re-authenticate on interval @service @low
+      ☐ Recreate eventsub subscriptions @service @low
+    ☐ Re-connect components on service wakeup @service @low
+      ✔ Reload configs @service @low @done(22-05-14 16:09)
+      ✔ Reload plugins @service @low @done(22-05-14 16:09)
+        ✔ Reload simple commands @service @low @done(22-05-14 16:09)
+    ✔ Connect/disconnect OBS @service @high @done(22-05-14 16:10)
+        ✔ Handle OBS shutting down before bot @service @high @done(22-05-14 16:10)
+    ☐ Create setup script to register bot process as service (`systemctl`) @service @low
+    ☐ Investigate if free `ngrok` account will work long term @service @research
+    ☐ Add safe quit / shutdown to web console @service @medium
+    ☐ Control OBS via remote system @service @research
+    ☐ ZMQ to network location @service @research
+
+  Installation:
+    // Process for installing and configuring the bot
+    ☐ Friendly setup @optional
+
+  Pubsub:
+    // Pubsub (depricated, but still usable)
+    ☐ Set pubsub off by default @pubsub @research
+
+  TCP:
+    ✔ Create TCP server and utils @done(22-12-22 14:19)
+
+  Other:
+    ☐ Add quote: shaunjik: “What is real life, or time, or anything? Free turtle tho.”
+    ☐ Add daemon to check the mic for input after switching from the start or brb screens
+      ☐ If not input is detected for an extended period, warn the user
+    ☐ Create file with stream events for use in OBS as "credits"
+      ☐ List subscribers, raids, follows, and cheers
+    ☐ Bingo @research
+
+  Bugs:

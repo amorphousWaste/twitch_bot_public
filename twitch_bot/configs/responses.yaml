@@ -1,0 +1,17 @@
+---
+# This file is used to map message phrases to bot responses.
+# Capitalization is not important, but spaces and punctuation are.
+
+# Find the phrase in the message
+in:
+    test: Found test in message.
+
+# The message is the same as the phrase
+is:
+    test message: Message is test message
+
+# These messages will trigger the corresponding commands
+# These are intended to be used as 'easter eggs' as opposed to normal commands.
+triggers:
+    trigger_1: command
+    trigger_2: command

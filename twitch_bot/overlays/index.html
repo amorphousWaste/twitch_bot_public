@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+        <title>Overlays</title>
+    </head>
+    <body>
+        <main>
+            <h1 id="testText">This is some text.</h1>
+            <div>
+                <video width="512" height="128" id="alertVideoElement" muted>
+                    <source src="file:///Volumes/MICRON/Twitch/alerts/renders/following.webm" type="video/webm">
+                </video>
+            </div>
+            <button type="button" onclick="showAlert()">Show Alert</button>
+        </main>
+	    <!-- <script src="index.js"></script> -->
+        <script>
+            var alertVideo = document.getElementById("alertVideoElement");
+
+            function showAlert() {
+                alertVideo.play();
+                document.getElementById("testText").innerText = "changed Text";
+            }
+        </script>
+    </body>
+</html>
