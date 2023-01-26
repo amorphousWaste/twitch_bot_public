@@ -3,11 +3,11 @@
 Plugin-based, asynchronous Python 3.9+ Twitch Bot with numerous integrations.
 
 [![Code style: black](https://img.shields.io/badge/code%20style-black-lightgrey?style=flat-square&color=000000)](https://github.com/psf/black)
-[![License: Unlicense](https://img.shields.io/github/license/amorphouswaste/twitch_bot?style=flat-square)](https://unlicense.org/)
+[![License: Unlicense](https://img.shields.io/github/license/amorphouswaste/twitch_bot_public?style=flat-square)](https://unlicense.org/)
 [![security: bandit](https://img.shields.io/badge/security-bandit-yellow?style=flat-square)](https://github.com/PyCQA/bandit)
-![Version](https://img.shields.io/github/v/tag/amorphouswaste/twitch_bot?label=version&style=flat-square)
-![Code Size](https://img.shields.io/github/languages/code-size/amorphouswaste/twitch_bot?style=flat-square)
-![File Count](https://img.shields.io/github/directory-file-count/amorphouswaste/twitch_bot?style=flat-square)
+![Version](https://img.shields.io/github/v/tag/amorphouswaste/twitch_bot_public?label=version&style=flat-square)
+![Code Size](https://img.shields.io/github/languages/code-size/amorphouswaste/twitch_bot_public?style=flat-square)
+![File Count](https://img.shields.io/github/directory-file-count/amorphouswaste/twitch_bot_public?style=flat-square)
 
 This was built more as a learning experience than because I thought anyone
 would actually want to use this, but it's here now. This package is meant to
